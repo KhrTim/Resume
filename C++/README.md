@@ -40,3 +40,5 @@ H C
 , where pairs of letters are edges in minimum spannig tree and number is a sum of edge's weights.<br />
 For particular exaple:
 ![Result graph image](Result_graph.jpg)
+
+P.S. Program doesn't provide visualisation of a graph. Images are made by another appliation and here only for demonstration.
