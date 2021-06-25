@@ -1,7 +1,7 @@
 # Database design project
 
 ## Description
-This project is a final project for databases course. <br />
+This is a final project for databases course. <br />
 Task and detailed description are in file `Database design.pdf`<br />
 While designing particular database, many interesting details were discovered about airport work and buisness model. <br />
 All of details descibed in same `Database design.pdf` file. :grin:<br />
