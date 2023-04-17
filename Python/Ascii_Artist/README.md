@@ -4,7 +4,7 @@ This program converts an image to so-called "ascii art". <br />
 Key idea is that pixels being replaced by ascii character, that matches the most.
 
 ## Usage
-Example of using this programme is provided in `demonstration.py` file.
+To start, run the `python3 demonstration.py` comand in projects directory.
 
 ## Results
 ![Original image of train](train.jpg) <br /> 
