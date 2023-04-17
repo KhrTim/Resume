@@ -1,21 +1,15 @@
 from ascii_artist import *
-import cProfile, pstats
+
 
 if __name__ == "__main__":
-    
-    # By default loads Ubuntu font. 
-    # If you want to use any other one, you should specify path to .ttf file
-
-    font = FontSetup() 
-    print(font.get_font_info())
+    font = FontSetup()
     artist = Artist(font)
-    # why diffecence
-    # picture streches in y-axis when font_size changes
+    file_name = input("Please, input the image file name: ")
+    output_file_name = input(
+        "Please, input the output image file name (without extension): ")
+    output_file_name += ".jpg"
+    desired_width = int(input("Please, enter desired output image width: "))
+    desired_font_size = int(input("Please, enter desired desired font size: "))
 
-    profiler = cProfile.Profile()
-    profiler.enable()
-    artist.create_art("/home/windy-stairs/Resume/Python/Ascii_Artist/marguerite.jpg",
-                        "ascii_marguerite_1.jpg", font_size=50)
-    profiler.disable()
-    stats = pstats.Stats(profiler).sort_stats('cumtime')
-    stats.print_stats()
+    artist.create_art(path_to_img=file_name, output_filename=output_file_name,
+                      font_size=desired_font_size, desired_width=desired_width)
